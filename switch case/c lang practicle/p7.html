@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Switch Case (7)</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let time = parseInt(prompt("Enter Time: "));
+
+        switch (true) {
+
+            case (time >= 7 && time <= 12):
+                document.write("It's Breakfast time..");
+                break;
+
+            case (time >= 13 && time <= 15):
+                document.write("It's Lunch time..");
+                break;
+
+            case (time >= 14 && time <= 17):
+                document.write("It's Tea time..");
+                break;
+
+            case (time >= 18 && time <= 24):
+                document.write("It's Dinner time..");
+                break;
+
+            default:
+                document.write("Please Enter Valid Input..!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

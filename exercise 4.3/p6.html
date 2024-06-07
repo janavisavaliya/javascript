@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else || JavaScript(6)</title>
+</head>
+<body>
+
+    <script>
+        //Write a program that calculates the total cost of a shopping cart based on items and
+        // their prices, applying discounts if applicable.
+
+        let item1 = parseFloat(prompt("Enter the price of the item1: "));
+        let item2 = parseFloat(prompt("Enter the price of the item2: "));
+        let item3 = parseFloat(prompt("Enter the price of the item3: "));
+
+        cost = item1 + item2 + item3;
+
+        if(cost < 1000)
+        {
+            console.log("FOR ANY DISCOUNT PLASE DO SHOPPING OF 1000RS.!!");
+        }
+        else if(cost <= 5000 && cost >= 1000)
+        {
+            console.log("you have 10% DISCOUNT !!");
+        }
+        else{
+            console.log("you have 20% DISCOUNT !!");
+        }
+
+    </script>
+
+</body>
+</html>
