@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            name : "janavi",
+            email : "janavisavaliya24@gmail.com",
+            password : 12345,
+            country : {
+                country : "india",
+                state : "gujarat",
+                city : ["surat","amreli","vadodara"]
+            }
+        }
+        document.write(`Name : ${obj.name}<br>`);
+        document.write(`E-mail : ${obj.email}<br>`);
+        document.write(`Password : ${obj.password}<br>`);
+        document.write(`Country : ${obj.country.country}<br>`);
+        document.write(`State : ${obj.country.state}<br>`);
+        document.write(`City : ${obj.country.city[1]}`);
+    </script>
+</body>
+</html>

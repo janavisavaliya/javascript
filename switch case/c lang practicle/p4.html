@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Switch Case (4)</title>
+</head>
+<body>
+
+
+    <script>
+
+        let number = parseInt(prompt("Enter Age: "));
+
+        switch(true)
+        {
+            case(number <= 12):
+                console.log("child");
+                break;
+            
+            case(number <= 19 && number > 12):
+                console.log("Teenager");   
+                break;
+
+            case(number <= 35 && number > 19):
+                console.log("Younger");
+                break;
+
+            case(number <= 55 && number > 35):
+                console.log("senior..");
+                break;
+            
+            case(number <= 150  && number > 55):
+                console.log("older..");
+                break;
+
+            default:
+                console.log("Entre valid number..")
+                break;
+        }
+
+    </script>
+    
+</body>
+</html>

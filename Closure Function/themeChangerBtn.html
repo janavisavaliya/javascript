@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Theme Changer Button</title>
+</head>
+<body>
+
+    <button id="blue">Blue</button>
+    <button id="red">red</button>
+
+    <script>
+        function clickHungler(color){
+            return function(){
+                document.body.style.backgroundColor = ` ${color} `;
+            }
+        }
+
+        document.getElementById("blue").onclick = clickHungler("blue");
+        document.getElementById("red").onclick = clickHungler("red");
+    </script>
+</body>
+</html>
