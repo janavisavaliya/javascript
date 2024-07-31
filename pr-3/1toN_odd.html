@@ -1,0 +1,17 @@
+<script>
+    let a = parseInt(prompt("Enter any number :- "));
+    document.write(`Your elements :- <br>`);
+    for(let i=1; i<=a; i++){
+        document.write(`${i} <br>`);
+    }
+    
+    document.write(`<br><br>Odd elements :- <br>`);
+
+    let i=1;
+    do{
+        if(i%2==1){
+            document.write(`${i} <br>`);
+        }
+        i++;
+    }while(i<=a);
+</script>

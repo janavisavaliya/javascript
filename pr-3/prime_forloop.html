@@ -1,0 +1,23 @@
+<script>
+    let a = parseInt(prompt("Enter any number :- "));
+    let num=1;
+
+    let i=2;
+    if(a>=1){
+        for (; i<a; i++) {
+            if (a%i == 0) {
+                num = 0;
+                break;
+            }
+        }
+    }
+    else{
+        num=0;
+    }
+
+    if (num==1) {
+        document.write(`${a} is a prime number..!`);
+    } else {
+        document.write(`${a} is not a prime number..!`);
+    }
+</script>
