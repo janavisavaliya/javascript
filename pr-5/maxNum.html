@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    let size = parseInt(prompt("Enter the size of Array: "));
+
+    let arr = [];
+    let max= 0;
+    for(let i=0; i<size; i++){
+        arr[i] = parseInt(prompt(`Enter the value of [${i}]: `));
+        console.log(`Array[${i}] :- ${arr[i]}`);
+
+        max = Math.max(`${arr[i]}`);
+    }
+    console.log("Maximum number of array :- " + max);
+</script>
