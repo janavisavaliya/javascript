@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    class bankAccount{
+        constructor(acNum,bal){
+            this.acNum = acNum;
+            this.bal = bal;
+            this.total = 0;
+        }
+
+        withDraw(val){
+            let accNo = parseInt(prompt("Enter your account number :- "));
+
+            if(accNo == this.acNum){
+                if(val === 0){
+                    alert("You can't withdraw 0 rupees..!");
+                }
+                else{
+                    if(this.bal < val){
+                        console.log("..Insuffient Error..");
+                    }
+                    else{
+                        this.total = this.bal - val;
+                        console.log(`Your Total Balance is :- ${this.total}`);
+                    }
+                }
+            }
+            else{
+                return false;
+            }
+            
+        }
+
+        deposite(val){
+            // console.log(val);
+            this.bal += val;
+            console.log(`Total Balance :- ${this.bal}`);
+        }
+    }
+
+    let bank = new bankAccount(212121212,1500);
+    bank.withDraw(100);
+    bank.deposite(200);
+    bank.deposite(600);
+    bank.withDraw(200);
+    bank.withDraw(1900);
+    bank.withDraw(1);
+    // bank.withDraw(0);
+</script>
